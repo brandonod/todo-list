@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', 'Helvetica';
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-primary: hsl(44, 50%, 90%);
+    --color-secondary: hsl(44, 50%, 10%);
+    --color-tertiary: hsl(104, 80%, 20%);
+    --color-accent: hsl(344, 80%, 20%);
+}
+.dark {
+    --color-primary: hsl(44, 50%, 10%);
+    --color-secondary: hsl(44, 50%, 90%);
+    --color-tertiary: hsl(104, 80%, 80%);
+    --color-accent: hsl(344, 80%, 80%);
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+
+button {
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+}
+
+#takeNote {
+    font-size: 36px;
+  }
+  
+button:hover {
+    scale: 1.05;
+}
+
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    padding: 50px;
+}
+
+.note {
+    padding: 35px 25px;
+    border: 1px solid var(--color-tertiary);
+    text-align: start;
+    border-radius: 25px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.createNote {
+    display: none;
+    flex-direction: column;
+    gap: 25px;
+    width: 400px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 25px;
+    margin-left: 35px;
+    border-radius: 10px;
+    border: 1px solid var(--color-accent);
+    
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#submitNote {
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    width: 100%;
+}
